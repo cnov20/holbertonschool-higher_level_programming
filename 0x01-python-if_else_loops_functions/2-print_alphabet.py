@@ -1,5 +1,4 @@
 #!/usr/bin/python3
 
-for i in range(97, 123):
-    print(chr(i), end="")
-    i += 1
+for char in range(97, 123):
+    print(chr(char), end="")

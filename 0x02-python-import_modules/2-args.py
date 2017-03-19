@@ -17,4 +17,4 @@ if __name__ == "__main__":
           print('{:d} {:s}:'.format(length - 1, args))
 
           for i in range(i, length, +1):
-            print('{:d}: {}'.format(length - 1, argv[i]))
+            print('{:d}: {:s}'.format(i, argv[i]))

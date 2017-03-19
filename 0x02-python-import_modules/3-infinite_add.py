@@ -1,8 +1,6 @@
 #!/usr/bin/python3
 if __name__ == "__main__":
     from sys import argv
-    arg = 'argument'
-    args = 'arguments'
     length = len(argv)
     result = 0
 

@@ -14,7 +14,7 @@ if __name__ == "__main__":
         print('{:d}: {:s}'.format(length - 1, argv[1]))
 
     elif length >= 3:
-          print('{:d} {:s}:'.format(length - 1, args))
+        print('{:d} {:s}:'.format(length - 1, args))
 
-          for i in range(i, length, +1):
+        for i in range(i, length, +1):
             print('{:d}: {:s}'.format(i, argv[i]))

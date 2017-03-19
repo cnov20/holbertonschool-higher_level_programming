@@ -1,2 +1,2 @@
 #!/usr/bin/python3
-import print_easy_101
+__import__('print_easy_101')

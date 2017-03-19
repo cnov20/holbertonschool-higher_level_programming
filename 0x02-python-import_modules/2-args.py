@@ -1,7 +1,6 @@
 #!/usr/bin/python3
-from sys import argv
 if __name__ == "__main__":
-    i = 1
+    from sys import argv
     arg = 'argument'
     args = 'arguments'
     length = len(argv)
@@ -15,6 +14,5 @@ if __name__ == "__main__":
 
     elif length >= 3:
         print('{:d} {:s}:'.format(length - 1, args))
-
-        for i in range(i, length, +1):
+        for i in range(1, length):
             print('{:d}: {:s}'.format(i, argv[i]))

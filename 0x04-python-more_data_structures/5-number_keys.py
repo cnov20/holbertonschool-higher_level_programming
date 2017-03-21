@@ -5,4 +5,5 @@ def number_keys(my_dict):
         for k, v in enumerate(range(len(my_dict))):
             num_keys += k
         return (num_keys)
-    return (None)
+    else:
+        return (None)

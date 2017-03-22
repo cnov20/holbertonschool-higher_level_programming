@@ -10,8 +10,10 @@ def magic_calculation(a, b):
                 raise Exception('Too Far')
             else:
                 result += a ** b / i
+        except:
+            break
 
-        except IndexError:
-            print('Too Far')
-
+        finally:
+            result = a + b
+            return
 dis.dis(magic_calculation)

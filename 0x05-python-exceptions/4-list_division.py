@@ -4,6 +4,7 @@ def list_division(my_list_1, my_list_2, list_length):
     for i in range(list_length):
         try:
             quotient = my_list_1[i] / my_list_2[i]
+            new_list.append(quotient)
         except ZeroDivisionError:
             quotient = 0
             print('division by 0')
@@ -14,5 +15,5 @@ def list_division(my_list_1, my_list_2, list_length):
             quotient = 0
             print('out of range')
         finally:
-            new_list.append(quotient)
+            pass
     return(new_list)

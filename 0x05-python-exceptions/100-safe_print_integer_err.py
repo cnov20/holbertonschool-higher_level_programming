@@ -3,7 +3,6 @@ import sys
 
 
 def safe_print_integer_err(value):
-        while True:
                 try:
                         print('{:d}'.format(value))
                         return (True)

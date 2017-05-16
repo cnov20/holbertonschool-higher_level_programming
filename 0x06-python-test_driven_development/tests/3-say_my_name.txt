@@ -11,16 +11,21 @@ First import ``say_my_name`` from the ``3-say_my_name`` module:
 Now use it:
     >>> say_my_name = __import__('3-say_my_name').say_my_name
 
-    >>> say_my_name("John", "Smith")
-    My name is John Smith
+    >>> say_my_name("Jesse", "Pinkman")
+    My name is Jesse Pinkman
 
     >>> say_my_name("Walter", "White")
     My name is Walter White
 
-    >>> say_my_name("Bob")
-    My name is Bob
+    >>> say_my_name("Snow")
+    My name is Snow
 
-    >>> say_my_name("Bob", 12)
+    >>> say_my_name(20, "Houston")
+    Traceback (most recent call last):
+                 ...
+    TypeError: first_name must be a string
+
+    >>> say_my_name("Allan", 20)
     Traceback (most recent call last):
      	         ...
     TypeError: last_name must be a string

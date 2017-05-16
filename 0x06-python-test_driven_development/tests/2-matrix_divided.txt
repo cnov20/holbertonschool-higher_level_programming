@@ -5,7 +5,7 @@ Using ``matrix_divided``
 ---------------------
 
 
-First import ``matrix_divided`` from the ``2-matrix_dividedr`` module:
+First import ``matrix_divided`` from the ``2-matrix_divided`` module:
 
       >>> matrix_divided = __import__('2-matrix_divided').matrix_divided
 

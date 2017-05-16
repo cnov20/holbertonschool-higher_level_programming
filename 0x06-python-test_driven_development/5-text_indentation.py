@@ -4,12 +4,11 @@ def text_indentation(text):
     if type(text) is not str:
         raise TypeError('text must be a string')
 
-#   words = text.split()
-    i = 0
-    letter = text[i]
+    ch = 0
     delimiter = set('.?:')
-    for letter in text:
-        print('{:s} '.join(format(letter)), end='')
+    for letter in delimiter:
+        if letter in text:
+            text = text.replace(letter, '\n\n')
 
-        if letter in delimiter:
-            print()
+    words = text.split('\n')
+    print('\n'.join(format(letter).strip() for letter in words), end='')

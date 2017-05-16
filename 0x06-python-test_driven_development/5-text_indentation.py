@@ -8,7 +8,7 @@ def text_indentation(text):
     delimiter = set('.?:')
     for letter in delimiter:
         if letter in text:
-            text = text.replace(letter, '\n\n')
+            text = text.replace(letter, letter + '\n\n')
 
     words = text.split('\n')
     print('\n'.join(format(letter).strip() for letter in words), end='')

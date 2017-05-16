@@ -12,7 +12,7 @@ class TestMaxInteger(unittest.TestCase):
 
     def test_arg_number(self):
         self.assertEqual(max_integer([1000000000000000,
-                                  1, 2, 3]), 1000000000000000)
+                                      1, 2, 3]), 1000000000000000)
 
 
     def test_no_input(self):

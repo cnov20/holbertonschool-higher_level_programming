@@ -14,7 +14,6 @@ class TestMaxInteger(unittest.TestCase):
         self.assertEqual(max_integer([1000000000000000,
                                       1, 2, 3]), 1000000000000000)
 
-
     def test_no_input(self):
         self.assertIsNone(max_integer())
 

@@ -47,7 +47,7 @@ Now use it:
     	            ...
     TypeError: text must be a string
 
-    >>> text_indentation("""What's up, doc ?"")
+    >>> text_indentation("""What's up, doc ?""")
     What's up, doc?
     <BLANKLINE>
 
@@ -71,5 +71,3 @@ Now use it:
     <BLANKLINE>
     .
     <BLANKLINE>
-
-    

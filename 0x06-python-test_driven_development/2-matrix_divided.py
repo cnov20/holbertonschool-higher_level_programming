@@ -33,10 +33,11 @@ def matrix_divided(matrix, div):
 
     new_matrix = []
 
-    for i in range(len(matrix)):
 
-        if type(i) is not int and type(i) is not float:
-            raise TypeError('matrix must be a matrix'
+    for i in range(len(matrix)):
+        for j in matrix[i]:
+            if type(j) is not int and type(j) is not float:
+                raise TypeError('matrix must be a matrix'
                             '(list of lists) of integers/floats')
 
         if len(matrix[i]) != len(matrix[0]):

@@ -9,6 +9,11 @@ class TestMaxInteger(unittest.TestCase):
     def test_int_list(self):
         self.assertEqual(max_integer([6, 7, 8, 9]), 9)
 
+    def test_arg_number(self):
+        self.assertEqual(max_integer([1000000000000000,
+                                  1, 2, 3]), 1000000000000000)
+
+
     def test_no_input(self):
         self.assertIsNone(max_integer())
 
@@ -17,10 +22,6 @@ class TestMaxInteger(unittest.TestCase):
 
     def test_list_only_none(self):
         self.assertIsNone(max_integer([None]))
-
-    def test_arg_number(self):
-        self.assertEqual(max_integer([1000000000000000,
-                                      1, 2, 3]), 1000000000000000)
 
     @unittest.expectedFailure
     def test_mix_list(self):

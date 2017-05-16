@@ -2,7 +2,7 @@
 '''
 This is the 'add_integer' module.
 
-The example module supplies a single function
+The add_integer module supplies a single function
 which takes two parameters - add(a, b).
 
 For example:

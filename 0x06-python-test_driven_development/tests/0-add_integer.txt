@@ -40,8 +40,12 @@ Now use it:
           ...
     TypeError: b must be an integer
 
-    # input large number
+    # input large integer
     >>> add_integer(999999999999, 1)
+    1000000000000
+
+    # input large float
+    >>> add_integer(999999999999.0, 1)
     1000000000000
 
     # input None
@@ -68,6 +72,7 @@ Now use it:
     	      ...
     TypeError: a must be an integer
 
+
     # no arguments
     >>> add_integer()
     Traceback (most recent call last):
@@ -81,7 +86,7 @@ Now use it:
    TypeError: add_integer() takes 2 positional arguments but 3 were given
 
 
-    # extra args
+    # extra args - invalid type (str)
     >>> add_integer(6, 2, "well hello there")
     Traceback (most recent call last):
     		   ...

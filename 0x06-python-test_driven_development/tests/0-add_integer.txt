@@ -11,16 +11,78 @@ First import ``add_integer`` from the ``0-add_integer`` module:
 
 Now use it:
 
+    # input int and int
     >>> add_integer(1, 5)
     6
 
+    # input float and int
+    >>> add_integer(8.0, 5)
+    13
+
+    # input float and int reversed
+    add_integer(8, 5.0)
+
+    # input int and negative int
     >>> add_integer(101, -3)
     98
 
+    # input float and negative int
     >>> add_integer(100.5, -2)
     98
 
-    >>> add_integer(4, 'Escuela')
+    >>> add_integer('Escuela', 4)
     Traceback (most recent call last):
 	  ...
+    TypeError: a must be an integer
+
+    >>> add_integer(4, 'Escuela')
+    Traceback (most recent call last):
+          ...
     TypeError: b must be an integer
+
+    # input large number
+    >>> add_integer(999999999999, 1)
+    1000000000000
+
+    # input None
+    >>> add_integer(None, None)
+    Traceback (most recent call last):
+    	      ...
+    TypeError: a must be an integer
+
+    # input bool and int
+    >>> add_integer(True, 45)
+    Traceback (most recent call last):
+              ...
+    TypeError: a must be an integer
+
+    # input bool and bool
+    >>> add_integer(False, True)
+    Traceback (most recent call last):
+    	      ...
+    TypeError: a must be an integer
+
+    # input list and int
+    >>> add_integer([1, 2, 3], 7)
+    Traceback (most recent call last):
+    	      ...
+    TypeError: a must be an integer
+
+    # no arguments
+    >>> add_integer()
+    Traceback (most recent call last):
+    	      ...
+    TypeError: add_integer() missing 2 required positional arguments: 'a' and 'b'
+
+   # extra args
+   >>> add_integer(3, 4, 6)
+   Traceback (most recent call last):
+   	     ...
+   TypeError: add_integer() takes 2 positional arguments but 3 were given
+
+
+    # extra args
+    >>> add_integer(6, 2, "well hello there")
+    Traceback (most recent call last):
+    		   ...
+    TypeError: add_integer() takes 2 positional arguments but 3 were given

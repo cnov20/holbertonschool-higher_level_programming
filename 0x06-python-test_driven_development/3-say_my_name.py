@@ -10,6 +10,7 @@ For example:
 My name is Walter White
 '''
 
+
 def say_my_name(first_name, last_name=""):
     '''
     Function prints the following:

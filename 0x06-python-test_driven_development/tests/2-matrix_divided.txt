@@ -58,7 +58,7 @@ Now use it:
 
       # input of two arguments
       >>> matrix = [[1, 6.0, 5], [4, 10.0, 3]]
-      >>> matrix_divided ()
+      >>> matrix_divided()
       Traceback (most recent call last):
                  ...
       TypeError: matrix_divided() missing 2 required positional arguments: 'matrix' and 'div'

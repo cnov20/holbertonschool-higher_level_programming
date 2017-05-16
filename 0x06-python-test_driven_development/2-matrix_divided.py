@@ -5,11 +5,15 @@ def matrix_divided(matrix, div):
 
     for i in range(len(matrix)):
 
-        if type(matrix[i]) is not int and type(matrix[i]) is not float:
-            raise TypeError('')
+        if type(div) is not int and type(div) is not float:
+            raise TypeError ('div must be a number')
 
-        elif type(matrix[i]) is not list:
-            raise TypeError('')
+
+        if type(matrix) is not int and type(matrix) is not float:
+            raise TypeError('matrix must be a matrix (list of lists) of integers/floats')
+
+        if div == 0:
+            raise ZeroDivisionError('division by zero')
 
         else:
             new_matrix += [list(map(lambda x: x / div, matrix[i]))]

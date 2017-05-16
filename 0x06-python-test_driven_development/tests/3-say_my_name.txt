@@ -18,7 +18,7 @@ Now use it:
     My name is Walter White
 
     >>> say_my_name("Snow")
-    My name is Snow
+    My name is Snow 
 
     >>> say_my_name(20, "Houston")
     Traceback (most recent call last):

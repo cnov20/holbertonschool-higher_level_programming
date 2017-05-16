@@ -48,7 +48,7 @@ Now use it:
     TypeError: text must be a string
 
     >>> text_indentation("""What's up, doc ?""")
-    What's up, doc?
+    What's up, doc ?
     <BLANKLINE>
 
     >>> text_indentation("foo", "bar")
@@ -57,7 +57,7 @@ Now use it:
     TypeError: text_indentation() takes 1 positional argument but 2 were given
 
     >>> text_indentation("")
-    <BLANKLINE>
+    
 
     >>> text_indentation(None)
     Traceback (most recent call last):

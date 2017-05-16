@@ -10,6 +10,8 @@ For example:
 [[0.33, 0.67, 1.0], [1.33, 1.67, 2.0]]
 
 '''
+
+
 def matrix_divided(matrix, div):
 
     '''
@@ -27,14 +29,15 @@ def matrix_divided(matrix, div):
         raise ZeroDivisionError('division by zero')
 
     if type(div) is not int and type(div) is not float:
-        raise TypeError ('div must be a number')
+        raise TypeError('div must be a number')
 
     new_matrix = []
 
     for i in range(len(matrix)):
 
         if type(i) is not int and type(i) is not float:
-            raise TypeError('matrix must be a matrix (list of lists) of integers/floats')
+            raise TypeError('matrix must be a matrix
+                            (list of lists) of integers/floats')
 
         if len(matrix[i]) != len(matrix[0]):
             raise TypeError('Each row of the matrix must have the same size')

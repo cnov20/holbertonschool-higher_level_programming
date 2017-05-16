@@ -10,7 +10,9 @@ For example:
 100
 '''
 
+
 def add_integer(a, b):
+
     '''
     Function adds two integers
 

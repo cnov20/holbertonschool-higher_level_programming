@@ -1,0 +1,3 @@
+This is a doctest file to test a function that prints passed in text parameter, but with certain specifications for special characters
+
+>>> text_indentation = __import__('5-text_indentation').text_indentation

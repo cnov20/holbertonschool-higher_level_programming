@@ -98,3 +98,8 @@ Now use it:
     	      ...
     OverflowError: cannot convert float infinity to integer
 
+    #input NaN float
+    >>> add_integer(1, float('NaN'))
+    Traceback (most recent call last):
+    	      ...
+    ValueError: cannot convert float NaN to integer

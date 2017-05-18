@@ -49,3 +49,13 @@ class Square:
                 for j in range(self.size):
                     print('#', end='')
                 print()
+
+    def __str__(self):
+        if self.size == 0 or self.position == 0:
+            return ('')
+        else:
+            square = '#'
+            for i in range(self.size):
+                for j in range(self.size - 1):
+                    print(square * self.size)
+                return(str(square * self.size))

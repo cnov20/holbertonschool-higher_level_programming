@@ -29,5 +29,14 @@ Now use it:
 		  	...
 	TypeError: size must be an integer
 
+	>>> my_square.size = -5
+	Traceback (most recent call last):
+		  	...
+	ValueError: size must be >= 0
+
+	>>> my_square = Square(-5)
+	>>> print(my_square.area())
+	25
+
     	>>> print(type(my_square))
     	<class '4-square.Square'>

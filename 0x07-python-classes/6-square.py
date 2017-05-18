@@ -26,10 +26,9 @@ class Square:
 
     @position.setter
     def position(self, value):
-        if type(value) is tuple and value >= 0:
-            self.__position = value
-        else:
+        if type(value) is not tuple and value < 0:
             raise TypeError('position must be a tuple of 2 positive integers')
+        self.__position = value
 
     def area(self):
         return (self.__size * self.__size)

@@ -56,6 +56,6 @@ class Square:
         else:
             square = '#'
             for i in range(self.size):
-                for j in range(self.size - 1):
+                for j in range(self.size):
                     print(square * self.size)
                 return(str(square * self.size))

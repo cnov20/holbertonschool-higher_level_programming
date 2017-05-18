@@ -54,8 +54,8 @@ class Rectangle:
             rectangle = '#'
             for i in range(self.height):
                 for j in range(self.height - 1):
-                    print(self.print_symbol * self.width)
-                return(str(self.print_symbol * self.width))
+                    print(str(self.print_symbol) * self.width)
+                return(str(self.print_symbol) * self.width)
 
     def __repr__(self):
         return('Rectangle({:d}, {:d})'.format(self.width, self.height))

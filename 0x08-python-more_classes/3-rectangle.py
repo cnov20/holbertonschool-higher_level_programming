@@ -42,10 +42,4 @@ class Rectangle:
         if self.width == 0 or self.height == 0:
             return ('')
         else:
-            return ('#')
-
-    def __repr__(self):
-        if self.width == 0 or self.height == 0:
-            return ('')
-        else:
-            return ('#')
+            return ('#' * self.width) * self.height

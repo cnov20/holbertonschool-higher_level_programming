@@ -14,6 +14,12 @@ Now use it:
 	>>> print(my_square.area())
 	7921
 
+	>>> my_square = Square(None)
+	>>> print(my_square.area())
+	Traceback (most recent call last):
+			  ...
+	TypeError: unsupported operand type(s) for *: 'NoneType' and 'NoneType'
+
 	>>> my_square.size = 3
 	>>> print(my_square.area())
 	9

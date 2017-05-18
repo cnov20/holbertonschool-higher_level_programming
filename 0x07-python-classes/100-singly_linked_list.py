@@ -30,10 +30,16 @@ class Node:
 class SinglyLinkedList:
 
     def __init__(self):
-        self.__head = None
-
+        self.head = None
 
     def sorted_insert(self, value):
-        next_node = Node(value)
-        self.__next_node = value
-        self.head = next_node
+        new_node = Node
+        new_node.data = Node.data
+        print(new_node.data)
+        Node.next_node = Node.next_node
+        self.current_node = new_node
+
+    def list_print(node):
+        while node != None:
+            print (node)
+            node = Node.next_node

@@ -28,3 +28,12 @@ class Rectangle(BaseGeometry):
         super().__init__
         self.integer_validator('width', width)
         self.integer_validator('height', height)
+        self.__width = width
+        self.__height = height
+
+    def area(self):
+        ''' Returns area of rectangle - method override - now implemented '''
+        return (self.__width * self.__height)
+
+    def __str__(self):
+        return ('{} {} {}'.format(type(self).__name__, self.__width, self.__height))

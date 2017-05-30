@@ -2,6 +2,7 @@
 
 ''' Module that adds exception raising to previously BaseGeometry class '''
 
+
 class BaseGeometry(object):
     ''' Class BaseGeometry '''
 
@@ -19,6 +20,7 @@ class BaseGeometry(object):
         def __str__(self):
             ''' Raises an exception for unimplemented methods '''
         raise Exception('area() is not implemented')
+
 
 class Rectangle(BaseGeometry):
     ''' Class that defines a rectangle - inherited from Class BaseGeometry '''

@@ -11,7 +11,6 @@ class BaseGeometry:
     def area(self):
         ''' Area method '''
 
-
         def __str__(self):
             ''' Raises an exception for unimplemented methods '''
         raise Exception('area() is not implemented')

@@ -2,4 +2,6 @@
 
 
 class MyInt(int):
-    pass
+    def __init__(self, type):
+        if type(object) is int:
+            False

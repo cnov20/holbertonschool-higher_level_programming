@@ -1,4 +1,4 @@
-#!/bin/usr/python3
+#!/usr/bin/python3
 
 ''' Module that determines if an object is an instance of a specified class
     which inherited directly(or indirectly) from said class'''

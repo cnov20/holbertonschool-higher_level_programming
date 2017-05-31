@@ -1,4 +1,4 @@
-#!/bin/usr/python3
+#!/usr/bin/python3
 
 ''' Module that returns list of available attributes
     and methods of an object (directory) '''

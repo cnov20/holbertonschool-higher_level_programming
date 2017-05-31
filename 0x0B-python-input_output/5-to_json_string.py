@@ -1,10 +1,10 @@
 #!/usr/bin/python3
 
 import json
-''' Module that converts a string to it corresponding JSON representation '''
+''' Module that converts an object to it corresponding JSON str fromat'''
 
 def to_json_string(my_obj):
 
-    ''' Convert str to JSON representation and returns '''
+    ''' Serializes Python object to JSON string and returns '''
 
     return(json.dumps(my_obj))

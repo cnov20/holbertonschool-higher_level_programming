@@ -40,4 +40,4 @@ class Rectangle(BaseGeometry):
     def __str__(self):
         ''' Returns formatted string with subclass attribute values '''
         return ('[{}] {}/{}'.format(type(self).__name__, self.__width,
-                                  self.__height))
+                                    self.__height))

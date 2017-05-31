@@ -2,6 +2,7 @@
 
 ''' Module that returns the number of lines of a text file '''
 
+
 def number_of_lines(filename=""):
 
     ''' Read file and return number of lines '''

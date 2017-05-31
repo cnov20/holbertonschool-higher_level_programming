@@ -1,10 +1,11 @@
 #!/usr/bin/python3
 
-''' Module that returns the number of lines of a text file '''
+''' Module that reads (n) lines of a text file and prints to stdout'''
+
 
 def read_lines(filename="", nb_lines=0):
 
-    ''' Read file and return number of lines '''
+    ''' Read (n) lines of file and print to stdout'''
 
     total_lines = 0
     with open('my_file_0.txt', encoding='utf-8') as a_file:

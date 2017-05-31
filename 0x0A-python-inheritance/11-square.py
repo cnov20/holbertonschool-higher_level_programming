@@ -57,5 +57,5 @@ class Square(Rectangle):
 
     def __str__(self):
         ''' Returns formatted string with subclass attributes - override '''
-        return ('[{}] {}/{}'.format(type(self).__name__, self.__size, self.__size))
-
+        return ('[{}] {}/{}'.format(type(self).__name__, self.__size,
+                                    self.__size))

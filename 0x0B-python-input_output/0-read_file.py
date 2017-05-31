@@ -2,6 +2,7 @@
 
 ''' Module that reads a text file and prints to std out '''
 
+
 def read_file(filename=""):
 
     ''' Read file and print to std out '''

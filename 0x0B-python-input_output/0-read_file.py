@@ -7,6 +7,6 @@ def read_file(filename=""):
 
     ''' Read file and print to std out '''
 
-with open(filename, encoding='utf-8') as a_file:
-    a_file = a_file.read()
-    print (a_file)
+    with open(filename, encoding='utf-8') as a_file:
+        a_file = a_file.read()
+        print(a_file, end='')

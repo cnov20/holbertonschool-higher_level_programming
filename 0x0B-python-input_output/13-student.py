@@ -5,7 +5,7 @@
 
 class Student:
 
-    ''' Creates new dictionary and replaces all attributes of class instance '''
+    ''' Creates new dictionary - replaces all attributes of class instance '''
 
     def __init__(self, first_name, last_name, age):
 

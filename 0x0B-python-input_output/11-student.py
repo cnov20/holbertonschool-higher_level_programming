@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 
-import json
 ''' Module that creates a Student class and returns JSON dict rep '''
+
 
 class Student:
 
@@ -12,5 +12,5 @@ class Student:
         self.age = age
 
     def to_json(self):
-        data = json.dumps(self.__dict__)
-        return json.loads(data)
+        data = self.__dict__
+        return (data)

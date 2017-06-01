@@ -7,4 +7,5 @@
 def class_to_json(obj):
 
     ''' Creates and returns a JSON dictionary object serialization '''
-    return (obj.__dict__)
+    if type(obj):
+        return (obj.__dict__)

@@ -2,4 +2,4 @@
 -- via join method
 SELECT cities.id, cities.name, states.name
 FROM cities
-JOIN states;
+INNER JOIN states ON cities.id = states.id;

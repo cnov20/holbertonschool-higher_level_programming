@@ -18,8 +18,8 @@ if __name__ == '__main__':
 
     Session = sessionmaker(bind=engine)
     session = Session()
-    new_state = session.query(State).
-    filter_by(id=2).update({'name': 'New Mexico'})
+    new_state = session.query(State).filter_by(id=2).update(
+        {'name': 'New Mexico'})
     session.commit()
     try:
         print("{}".format(new_state))

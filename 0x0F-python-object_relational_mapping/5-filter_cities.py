@@ -15,10 +15,11 @@ if __name__ == '__main__':
     ORDER BY cities.id ASC".format(argv[4]))
     query_rows = cursor.fetchall()
     index = 0
-    for index, row in enumerate(query_rows):
+    for row in query_rows:
         if index > 0:
             print(', ', end='')
         print('{}'.join(row), end='')
+        index += 1
     print()
     cursor.close()
     conn.close()

@@ -15,7 +15,7 @@ if __name__ == '__main__':
     ORDER BY cities.id ASC".format(argv[4]))
     query_rows = cursor.fetchall()
     for row in query_rows:
-        print(row, end='')
+        print("{}, ".format(''.join(row)), end='')
     print()
     cursor.close()
     conn.close()

@@ -15,8 +15,8 @@ engine = create_engine('mysql+mysqldb://{}:{}@localhost/{}'
                        .format(argv[1], argv[2], argv[3]))
 Base.metadata.create_all(engine)
 
-Session = sessionmaker()
-session = Session(engine)
+Session = sessionmaker(bind=engine)
+session = Session()
 for state in session.query(State).order_by(State.id).all():
     # HERE: no SQL query, only objects!
     print("{}: {}".format(state.id, state.name))

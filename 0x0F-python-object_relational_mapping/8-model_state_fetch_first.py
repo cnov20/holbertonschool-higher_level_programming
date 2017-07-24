@@ -19,5 +19,7 @@ if __name__ == '__main__':
     session = Session()
     first_state = session.query(State).first()
     # HERE: no SQL query, only objects!
+    if (first_state is None):
+        print("Nothing")
     print("{}: {}".format(first_state.id, first_state.name))
     session.close()

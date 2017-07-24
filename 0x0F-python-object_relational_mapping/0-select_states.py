@@ -14,3 +14,6 @@ for row in query_rows:
     print(row)
 cursor.close()
 conn.close()
+
+if __name__ == 'main':
+    main()

@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 
-''' Module that lists all objects with a given attribute in a given table, using
-SQLAlchemy, this is linked to a MySQL table via SQLAlchemy '''
+''' Module that lists all objects with a given attribute in a given table,
+using SQLAlchemy, this is linked to a MySQL table via SQLAlchemy '''
 
 from sys import argv
 from model_state import Base, State

@@ -14,8 +14,11 @@ if __name__ == '__main__':
     INNER JOIN states ON cities.state_id = states.id WHERE states.name='{}'\
     ORDER BY cities.id ASC".format(argv[4]))
     query_rows = cursor.fetchall()
-    for row in query_rows:
-        print("{}, ".format(''.join(row)), end='')
+    index = 0
+    for index, row in enumerate(query_rows):
+        if index > 0:
+            print(', ', end='')
+        print('{}'.join(row), end='')
     print()
     cursor.close()
     conn.close()

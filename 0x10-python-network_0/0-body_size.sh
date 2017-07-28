@@ -1,3 +1,3 @@
 #!/bin/bash
 #Sends a 'curl' cmd  request to a given URL and displays size of response body
-curl -s -o /dev/null --write-out '%{size_download}\n'
+curl -sI "$1" --write-out '%{size_download}\n'

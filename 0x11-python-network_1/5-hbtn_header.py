@@ -7,10 +7,9 @@
 if __name__ == "__main__":
 
     import requests
-    import sys
+    from sys import argv
 
-    url = sys.argv[1]
+    url = argv[1]
     req = requests.get(url)
-    headers = req.headers
-    x_request_id = headers['X-Request-Id']
+    x_request_id = req.headers['X-Request-Id']
     print(x_request_id)

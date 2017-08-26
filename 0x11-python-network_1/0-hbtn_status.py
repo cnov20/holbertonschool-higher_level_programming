@@ -14,4 +14,4 @@ if __name__ == "__main__":
         print('\t- type: {}'.format(type(holberton)))
         print('\t- content: {}'.format(holberton))
         print('\t- utf8 content: {}'.format(holberton.
-                                         decode('utf-8', 'strict')))
+                                            decode('utf-8', 'strict')))

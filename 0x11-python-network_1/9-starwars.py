@@ -16,11 +16,8 @@ if __name__ == "__main__":
     get_req = requests.get(url, params=payload)
     json_format = get_req.json()
     results = json_format.get('results')
-    num_results = 0
-    names = ""
+    count = json_format.get('count')
+    print('Number of result: {}'.format(count))
     for item in results:
-        num_results += 1
         name = item.get('name')
-        names += name + '\n'
-    print('Number of result: {}'.format(num_results))
-    print(names)
+        print(name)

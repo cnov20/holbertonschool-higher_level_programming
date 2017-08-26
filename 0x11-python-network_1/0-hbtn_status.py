@@ -10,8 +10,8 @@ if __name__ == "__main__":
     req = urllib.request.Request('https://intranet.hbtn.io/status')
     with urllib.request.urlopen(req) as response:
         holberton = response.read()
-    print('Body response:')
-    print('\t - type: {}'.format(type(holberton)))
-    print('\t - content: {}'.format(holberton))
-    print('\t - utf8 content: {}'.format(holberton.
+        print('Body response:')
+        print('\t- type: {}'.format(type(holberton)))
+        print('\t- content: {}'.format(holberton))
+        print('\t- utf8 content: {}'.format(holberton.
                                          decode('utf-8', 'strict')))

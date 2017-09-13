@@ -2,23 +2,23 @@
 
 let args = process.argv;
 let numArgs = args.slice(2);
-let words = numArgs.toString().split(',');
-let nums = parseInt(words);
-let squareRep = 'X';
+let size = parseInt(numArgs);
+let squareRep = '';
 
-function printSquare (nums) {
-  if (!nums) {
+function printSquare (size) {
+  if (!size) {
     console.log('Missing size');
   }
-  if (numArgs <= 0) {
+  else if (size.length < 0) {
     return false;
   } else {
-    for (let i = 0; i < nums; i++) {
-      for (let j = 0; j < nums; j++) {
-        console.log(squareRep);
-      }
+    for (let i = 0; i < size; i++) {
+	squareRep += 'X';
+    }
+    for (let j = 0; j < size; j++) {
+      	console.log(squareRep);
     }
   }
 }
 
-printSquare(nums);
+printSquare(size);

@@ -10,7 +10,8 @@ function sortArgs (num) {
   } else {
     numArgs = numArgs.sort();
     numArgs = numArgs.slice(-2, -1);
-    return (numArgs.toString());
+    numArgs = parseInt(numArgs);
+    return (numArgs);
   }
 }
 console.log(sortArgs(num));

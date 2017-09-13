@@ -9,9 +9,8 @@ function sortArgs (num) {
     return (0);
   } else {
     numArgs = numArgs.sort();
-    numArgs = numArgs.slice(-1);
+    numArgs = numArgs.slice(-2, -1);
     return (numArgs.toString());
   }
 }
-
 console.log(sortArgs(num));

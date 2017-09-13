@@ -8,15 +8,14 @@ let squareRep = '';
 function printSquare (size) {
   if (!size) {
     console.log('Missing size');
-  }
-  else if (size.length < 0) {
+  } else if (size.length < 0) {
     return false;
   } else {
     for (let i = 0; i < size; i++) {
-	squareRep += 'X';
+      squareRep += 'X';
     }
     for (let j = 0; j < size; j++) {
-      	console.log(squareRep);
+      console.log(squareRep);
     }
   }
 }

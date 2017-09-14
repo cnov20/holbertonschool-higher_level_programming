@@ -5,8 +5,8 @@ let numArgs = args.slice(2);
 let num = parseInt(numArgs);
 
 function sortArgs (num) {
-  if (!numArgs || numArgs === 1) {
-      return;
+  if (!num || num === 1) {
+    return (0);
   } else {
     numArgs.sort(function (a, b) {
       return a - b;

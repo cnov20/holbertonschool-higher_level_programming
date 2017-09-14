@@ -7,7 +7,7 @@ let num = parseInt(numArgs);
 // for i < numArgs.length
 //    numArgs[i] = parseInt(numArgs[i])
 function sortArgs (num) {
-  if (!numArgs || numArgs.length === 1) {
+  if (!num || numArgs.length === 1) {
     return (0);
   } else {
     numArgs.sort(function (a, b) {

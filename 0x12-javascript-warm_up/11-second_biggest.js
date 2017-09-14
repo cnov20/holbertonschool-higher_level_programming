@@ -5,7 +5,7 @@ let numArgs = args.slice(2);
 let num = parseInt(numArgs);
 
 function sortArgs (num) {
-  if (!num || num === 1) {
+  if (!numArgs || numArgs === 1) {
     return (0);
   } else {
     numArgs.sort(function (a, b) {

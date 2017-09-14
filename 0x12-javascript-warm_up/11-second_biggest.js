@@ -14,4 +14,4 @@ function sortArgs (num) {
     return (numArgs);
   }
 }
-console.log(sortArgs(num));
+console.log(sortArgs(numArgs));

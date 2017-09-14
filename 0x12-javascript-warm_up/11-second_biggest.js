@@ -5,13 +5,15 @@ let numArgs = args.slice(2);
 let num = parseInt(numArgs);
 
 function sortArgs (num) {
-  if (!num || num === 1) {
-    return (0);
+  if (!numArgs || numArgs === 1) {
+      return;
   } else {
-    numArgs = numArgs.sort();
+    numArgs.sort(function (a, b) {
+      return a - b;
+    });
     numArgs = numArgs.slice(-2, -1);
     numArgs = parseInt(numArgs);
     return (numArgs);
   }
 }
-console.log(sortArgs(numArgs));
+console.log(sortArgs(num));

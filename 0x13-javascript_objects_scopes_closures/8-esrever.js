@@ -1,4 +1,5 @@
 #!/usr/bin/node
+
 // Function that returns the reversed version of an array (list)
 
 module.exports.esrever = function (list) {

@@ -14,10 +14,10 @@ module.exports.Rectangle = function Rectangle (w, h) {
   this.print = function () {
     let rectangleRep = '';
     for (let i = 0; i < w; i++) {
-	    rectangleRep += 'X';
+      rectangleRep += 'X';
     }
     for (let j = 0; j < h; j++) {
-	    console.log(rectangleRep);
+      console.log(rectangleRep);
     }
   };
 
@@ -27,7 +27,7 @@ module.exports.Rectangle = function Rectangle (w, h) {
   };
 
   this.rotate = function () {
-    temp = w;
+    let temp = w;
     w = h;
     h = temp;
   };

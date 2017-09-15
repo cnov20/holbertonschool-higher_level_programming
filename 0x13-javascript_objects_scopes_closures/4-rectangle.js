@@ -14,22 +14,22 @@ module.exports.Rectangle = function Rectangle (w, h) {
 
   this.print = function () {
     let rectangleRep = '';
-    for (let i = 0; i < w; i++) {
+    for (let i = 0; i < this.width; i++) {
       rectangleRep += 'X';
     }
-    for (let j = 0; j < h; j++) {
+    for (let j = 0; j < this.height; j++) {
       console.log(rectangleRep);
     }
+  };
+
+  this.rotate = function () {
+    let temp = this.width;
+    this.width = this.height;
+    this.height = temp;
   };
 
   this.double = function () {
     this.width *= 2;
     this.height *= 2;
-  };
-
-  this.rotate = function () {
-    let temp = w;
-    w = h;
-    h = temp;
   };
 };

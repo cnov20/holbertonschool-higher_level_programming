@@ -5,6 +5,7 @@
 // print() instance method to display representation of object
 // rotate() instance method that exchanges object width and height
 // double() instance method that multiplies width and height of obj by 2
+
 module.exports.Rectangle = function Rectangle (w, h) {
   if (!w || !h || w <= 0 || h <= 0) { return this; }
 
@@ -22,8 +23,8 @@ module.exports.Rectangle = function Rectangle (w, h) {
   };
 
   this.double = function () {
-    w *= 2;
-    h *= 2;
+    this.width *= 2;
+    this.height *= 2;
   };
 
   this.rotate = function () {

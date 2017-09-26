@@ -5,9 +5,10 @@
 
 let fs = require('fs');
 let file = process.argv[2];
+
 fs.readFile(file, 'utf8', function (error, text) {
   if (error) {
-    throw error;
+      return console.log(error);
   }
-  process.stdout.write(text);
+  console.log(text);
 });

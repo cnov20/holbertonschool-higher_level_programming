@@ -8,7 +8,7 @@ let file = process.argv[2];
 
 fs.readFile(file, 'utf8', function (error, text) {
   if (error) {
-      return console.log(error);
+    return console.log(error);
   }
-  console.log(text);
+  process.stdout.write(text);
 });

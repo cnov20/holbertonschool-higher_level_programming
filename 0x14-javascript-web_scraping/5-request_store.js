@@ -9,8 +9,10 @@ const url = process.argv[2];
 const fileName = process.argv[3];
 
 let fileStream = fs.createWriteStream(fileName);
-request(url).pipe(fileStream), function (err, res, body) {
-  if (err) {
-    console.log(err);
-  }
-};
+request(url)
+    .pipe(fileStream)
+    .on('finish', function (err, res, body) {
+      if (err) {
+        console.log(err);
+      }
+    });

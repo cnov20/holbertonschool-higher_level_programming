@@ -15,9 +15,9 @@ let w = fs.createWriteStream(fileDestination);
 let r = fs.createReadStream(fileOne);
 let r2 = fs.createReadStream(fileTwo);
 
-w.on('close', function () {
-  console.log('done writing');
-});
+//w.on('close', function () {
+//  console.log('done writing');
+//});
 
 r.pipe(w);
 r2.pipe(w);

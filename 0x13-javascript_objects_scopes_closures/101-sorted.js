@@ -6,15 +6,24 @@
 const occurenceObject = require('./101-data').dict;
 
 let idsObject = {};
-let array = [];
+let newKey;
 
 for (let key in occurenceObject) {
-  if (occurenceObject.hasOwnProperty(key)) {
-    array = occurenceObject[key];
-  }
-  idsObject[array] += key;
+  let values = [];
 
-    // }
+  newKey = occurenceObject[key];
+  console.log('New key: ' + newKey);
+
+  for (let key in occurenceObject) {
+    if (occurenceObject[key] === newKey) {
+      values.push(key);
+      console.log('Values:', values);
+      delete occurenceObject[key];
+    }
+  }
+
+  idsObject[newKey] = values;
+  console.log(idsObject[newKey]);
 }
 
 // Object.entries(occurenceObject).forEach(

@@ -9,10 +9,10 @@ const fileOne = process.argv[2];
 const fileTwo = process.argv[3];
 const fileDestination = process.argv[4];
 
-//console.log(process.argv.length);
+// console.log(process.argv.length);
 
 if (process.argv.length !== 5) {
-    console.log("error");
+  console.log('error');
 }
 
 // open destination file for appending
@@ -21,7 +21,7 @@ let w = fs.createWriteStream(fileDestination);
 let r = fs.createReadStream(fileOne);
 let r2 = fs.createReadStream(fileTwo);
 
-//w.on('close', function () {
+// w.on('close', function () {
 //  console.log('done writing');
 // });
 

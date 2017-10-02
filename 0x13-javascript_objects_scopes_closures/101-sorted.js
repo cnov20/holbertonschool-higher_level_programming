@@ -12,18 +12,15 @@ for (let key in occurenceObject) {
   let values = [];
 
   newKey = occurenceObject[key];
-  console.log('New key: ' + newKey);
 
   for (let key in occurenceObject) {
     if (occurenceObject[key] === newKey) {
       values.push(key);
-      console.log('Values:', values);
       delete occurenceObject[key];
     }
   }
 
   idsObject[newKey] = values;
-  console.log(idsObject[newKey]);
 }
 
 // Object.entries(occurenceObject).forEach(
